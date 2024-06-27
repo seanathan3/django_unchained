@@ -1,3 +1,9 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+
+<body>
 <h1>Welcome to Polls Index!</h1>
 
 {%  if latest_question_list %}
@@ -9,3 +15,5 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+</body>
